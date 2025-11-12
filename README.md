@@ -49,8 +49,10 @@ curl -k -O http://localhost:8080/file
 
 Edit paths in `include/api/api.h`:
 ```c
+#define CUSTOM_PATH "path/to/your/file"
 #define MP4_PATH "path/to/your/video.mp4"
-#define PLUGIN_FOLDER_PATH "path/to/your/folder" 
+#define PLUGIN_FOLDER_PATH "../.config/nvim"
+#define COMPRESSED_FOLDER_PATH "your_folder_path"
 #define PORT 8080
 ```
 
